@@ -53,6 +53,17 @@ clusterDomain: cluster.local
 ## https://kubernetes.io/docs/concepts/services-networking/add-entries-to-pod-etc-hosts-with-host-aliases/
 ##
 hostAliases: []
+
+## Deployment dns configuration options
+## https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-dns-config
+##
+dnsConfig: {}
+  # searches:
+  #   - rabbitmq-headless.svc.cluster.local
+  # options:
+  #   - name: ndots
+  #     value: "6"
+
 ## @param commonAnnotations Annotations to add to all deployed objects
 ##
 commonAnnotations: {}
